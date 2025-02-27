@@ -22,7 +22,7 @@ if st.sidebar.button("Predict Price"):
     predicted_price = model.predict(input_data)[0]
 
     st.subheader("Predicted Sale Price:")
-st.markdown(f"<h1 style='text-align: center; color: green;'>${predicted_price[0]:,.2f}</h1>", unsafe_allow_html=True)
+st.markdown(f"<h1 style='text-align: center; color: green;'>${predicted_price:,.2f}</h1>", unsafe_allow_html=True)
 
 
 st.sidebar.markdown("---")
