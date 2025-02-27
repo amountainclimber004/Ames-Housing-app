@@ -9,19 +9,13 @@ import joblib
 # Load data
 df = pd.read_excel('Ames_Housing.xlsx')
 
-# Print column names to debug
-print("Column names in dataset:")
-print(df.columns.tolist())  
-
-# Stop execution here to check output
-exit()
 
 
 # Drop rows where SalePrice is missing
 df = df.dropna(subset=['SalePrice'])
 
 # Define features and target
-numeric_features = ['GrLivArea', 'TotalBsmtSF', 'BedroomAbvGr']
+numeric_features = ['Gr Liv Area', 'Total Bsmt SF', 'Bedroom AbvGr']
 categorical_features = ['Neighborhood', 'House Style']
 
 X = df[numeric_features + categorical_features].copy()  # Select only required columns
