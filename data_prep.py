@@ -14,7 +14,7 @@ df = df.dropna(subset=['SalePrice'])
 
 # Define features and target
 numeric_features = ['GrLivArea', 'TotalBsmtSF', 'BedroomAbvGr']
-categorical_features = ['Neighborhood', 'HouseStyle']
+categorical_features = ['Neighborhood', 'House Style']
 
 X = df[numeric_features + categorical_features].copy()  # Select only required columns
 y = df['SalePrice']
