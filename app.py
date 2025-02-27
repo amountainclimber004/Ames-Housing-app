@@ -24,7 +24,6 @@ if st.sidebar.button("Predict Price"):
     st.subheader("Predicted Sale Price:")
 st.markdown(f"<h1 style='text-align: center; color: green;'>${predicted_price:,.2f}</h1>", unsafe_allow_html=True)
 
-
 st.sidebar.markdown("---")
 st.sidebar.text("Built for Streamlit")
 
