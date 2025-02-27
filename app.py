@@ -22,7 +22,7 @@ if st.sidebar.button("Predict Price"):
     predicted_price = model.predict(input_data)[0]
 
     st.subheader("Predicted Sale Price:")
-    st.write(f"💰 ${predicted_price:,.2f}")
+    st.write(f"💰 {<h1 style='text-align: center; color: green;'>$predicted_price:,.2f}")
 
 st.sidebar.markdown("---")
 st.sidebar.text("Built for Streamlit")
