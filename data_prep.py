@@ -9,6 +9,14 @@ import joblib
 # Load data
 df = pd.read_excel('Ames_Housing.xlsx')
 
+# Print column names to debug
+print("Column names in dataset:")
+print(df.columns.tolist())  
+
+# Stop execution here to check output
+exit()
+
+
 # Drop rows where SalePrice is missing
 df = df.dropna(subset=['SalePrice'])
 
