@@ -9,7 +9,13 @@ import joblib
 # Load data
 df = pd.read_excel('Ames_Housing.xlsx')
 
-
+# Load data
+try:
+    df = pd.read_excel('Ames_Housing.xlsx')
+    print("File loaded successfully!")
+except Exception as e:
+    print(f"Error loading file: {e}")
+    exit()
 
 # Drop rows where SalePrice is missing
 df = df.dropna(subset=['SalePrice'])
